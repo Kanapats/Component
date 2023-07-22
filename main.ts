@@ -1,8 +1,5 @@
 radio.onReceivedNumber(function (receivedNumber) {
-    if (receivedNumber == 0) {
-        makerbit.runMp3Command(Mp3Command.STOP)
-        basic.showIcon(IconNames.SmallSquare)
-    } else if (receivedNumber == 1) {
+    if (receivedNumber == 1) {
         makerbit.playMp3TrackFromFolder(1, 1, Mp3Repeat.No)
         basic.showIcon(IconNames.No)
     } else {
